@@ -7,21 +7,25 @@ html
     link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    // Updated navigation bar with Game Portal and Sign In button on the right
     nav.navbar.fixed-top.navbar-toggleable-md.navbar-inverse
       .container
         button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarMain')
           span.navbar-toggler-icon
-        a.navbar-brand(href='/ ') Loc8r
+        a.navbar-brand(href='/ ') Game Portal
         #navbarMain.navbar-collapse.collapse
           ul.navbar-nav.mr-auto
             li.nav-item
               a.nav-link(href='/about/') About 
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='/login/') Sign In
     .container
       block content
       footer
         .row
           .col-12
-            small &copy; Simon Holmes 2017
+            small &copy; Nazim Alperen Akcakaya 2024
     script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
     script(src='/javascripts/bootstrap.min.js')

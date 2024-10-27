@@ -1,46 +1,55 @@
 @import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
 
+/* General Body and Font */
 body {
   font-family: "Cabin", Arial, sans-serif;
   color: #ffffff;
-  background-color: #108a93;
+  background-color: #1d1f21; /* Darker gaming background */
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lobster', cursive;
+  color: #e6e6e6; /* Light gray for headings */
 }
 
+/* Navbar */
 .navbar {
-  background-color: #ad1d28;
-  border-color: #911821;
+  background-color: #2b2d42; /* Darker, modern gaming navbar */
+  border-color: #1a1b25;
 }
 
 .navbar-brand {
   font-family: 'Lobster', cursive;
+  color: #ef233c !important; /* Bright red for branding */
 }
 
+/* Main Banner */
 .banner {
   margin-top: 4em;
-  border-bottom: 1px solid #469ea8;
+  border-bottom: 1px solid #8d99ae;
   margin-bottom: 1.5em;
   padding-bottom: 0.5em;
 }
 
 h1 small {
-  color: #aaa;
+  color: #8d99ae;
 }
 
+/* Card Design */
 .card {
-  background-color: #469ea8;
+  background-color: #343a40; /* Darker card background for gaming */
+  border-radius: 10px; /* Rounded card corners */
 }
 
 .card-primary {
-  border-color: #a2ced3;
+  border-color: #8d99ae;
   margin-bottom: 1rem;
 }
 
+/* Review Header */
 .review-header {
-  background-color: #31727a;
+  background-color: #495057; /* Soft dark background */
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-bottom: 0.5em;
@@ -57,13 +66,16 @@ h1 small {
   margin-right: 1rem;
 }
 
+/* Badges and Buttons */
 .badge-default, .btn-primary {
-  background-color: #ad1d28;
-  border-color: #911821;
+  background-color: #ef233c; /* Bright gaming red */
+  border-color: #d90429;
 }
 
+/* Links */
 h4 a, h4 a:hover {
-  color: #fff;
+  color: #ffffff; /* White links */
+  text-decoration: none;
 }
 
 h4 small {
@@ -72,14 +84,97 @@ h4 small {
   color: #aaa;
 }
 
+/* Address section */
 .address {
   margin-bottom: 0.5rem;
+  color: #8d99ae; /* Subtle gray for addresses */
 }
 
+/* Facilities Badges */
 .facilities span.badge {
-  margin-right:2px;
+  margin-right: 2px;
 }
 
+/* Form legends */
 legend {
   font-family: 'Lobster', cursive;
+  color: #ffffff;
+}
+
+/* Updated Gradient Background */
+.gradient-custom {
+  background: #6a11cb;
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+}
+
+/* Card Styling */
+.card {
+  background-color: #343a40;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  /* Soft shadow for a gaming vibe */
+}
+
+/* Form Controls */
+.form-control {
+  background-color: #495057;
+  /* Dark form fields */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-control:focus {
+  background-color: #495057;
+  color: #ffffff;
+  border-color: #6a11cb;
+  /* Matches gradient theme */
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+/* Labels */
+.form-label {
+  color: #8d99ae;
+  /* Subtle gray for labels */
+}
+
+/* Button Styling */
+.btn-primary,
+.btn-outline-light {
+  background-color: #ef233c;
+  border: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-outline-light:hover {
+  background-color: #d90429;
+  color: #ffffff;
+}
+
+.btn-link.btn-floating {
+  color: #8d99ae;
+  font-size: 1.2em;
+}
+
+.btn-link.btn-floating:hover {
+  color: #ffffff;
+}
+
+/* Checkbox Styling */
+.form-check-input {
+  accent-color: #ef233c;
+}
+
+.form-check-label {
+  color: #8d99ae;
+}
+
+/* Responsive Design Tweaks */
+@media (max-width: 768px) {
+  .card {
+    margin: 0 1rem;
+  }
 }
