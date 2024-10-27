@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dbURI = "mongodb+srv://alperenakcakaya:<25Database12!>@alperen.6nhye.mongodb.net/?retryWrites=true&w=majority&appName=Alperen";
+const dbURI = "mongodb+srv://alperenakcakaya:<alperen1234>@alperen1234.ke47c.mongodb.net/?retryWrites=true&w=majority&appName=alperen1234";
 
 try {
    
@@ -12,4 +12,6 @@ mongoose.connect(
 }
  catch (e) {
   console.log("could not connect");
-}//require('./locations');
+}
+
+

@@ -7,12 +7,11 @@ html
     link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    // Updated navigation bar with Game Portal and Sign In button on the right
     nav.navbar.fixed-top.navbar-toggleable-md.navbar-inverse
       .container
         button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarMain')
           span.navbar-toggler-icon
-        a.navbar-brand(href='/ ') Game Portal
+        a.navbar-brand(href='/') Game Portal
         #navbarMain.navbar-collapse.collapse
           ul.navbar-nav.mr-auto
             li.nav-item
@@ -20,6 +19,8 @@ html
           ul.navbar-nav.ml-auto
             li.nav-item
               a.nav-link(href='/login/') Sign In
+            li.nav-item
+              a.nav-link(href='/register/') Sign Up
     .container
       block content
       footer
